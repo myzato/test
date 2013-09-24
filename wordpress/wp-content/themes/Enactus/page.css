@@ -1,0 +1,14 @@
+
+body{
+	background-image:url("images/body-bg.jpg");
+	}
+
+.wp_social_bookmarking_light{
+		height:50px;
+		border:solid 2px #F5AC0F;
+}
+.wsbl_facebook_like,.wsbl_twitter,.wsbl_line,.wsbl_facebook{
+		float:left;
+		margin: 10px;
+
+}
