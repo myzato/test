@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Shift-JIS" />
+    <title>日記書き込み</title>
+</head>
+<body>
+
+<table align="center" bgcolor="#cc6666" width="800">
+<tbody>
+<tr>
+    <td style="color:#ffcc99" align="center">PHP で作る日記帳</td>
+</tr>
+</tbody>
+</table>
+
+<table align="center">
+<tbody>
+<tr>
+<td>
+<!-- フォーム開始 -->
+<form method="post" action="./dbwrite.php" enctype="urlencode">
+タイトル：<br /><input name="title" type="text" size="80" maxlength="80">
+<p></p>
+
+<textarea name="contents" cols="60" rows="10"></textarea>
+<br />
+<p>
+気分：
+<select name="feeling">
+    <option value="0">Good!!</option>
+    <option selected value="1">普通</option>
+    <option value="2">Bad</option>
+</select>
+</p>
+<input value="書き込む！" type="submit">
+<input value="リセット" type="reset">
+</form>
+<!-- フォーム終了 -->
+</td>
+</tr>
+</tbody>
+</table>
+
+<br />
+<table align="center" bgcolor="#cc6666" width="800">
+<tbody>
+<tr>
+    <td style="color:#ffcc99" align="center">
+      Copyright(C)2009 ひと目でわかるPHP開発入門, ALL Rights Reserved.</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
