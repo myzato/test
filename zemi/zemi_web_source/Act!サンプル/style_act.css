@@ -1,0 +1,1952 @@
+/*
+Theme Name: Test
+Theme URI: http://localhost:8888/
+Description: Dotinstall
+Author: Test
+Author URI: http://dotinstall.com/
+Version: 1.0
+ 
+*/
+ 
+/* レイアウト  */
+html,body{
+	margin:0;
+	padding:0;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+html{
+	//background-color:white;
+}
+#menu{//margin-left:760px;
+      border:1px #DCDCDC solid;
+      padding:0;
+      float:right;
+      width:25.4%;
+      //margin-top:30px;
+      //margin-bottom:100px;
+	//position:absolute;
+	top:300px;
+	right:0px;
+      behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+	
+}
+.menu{//margin-left:760px;
+      padding:0;
+      float:right;
+      //width:25%;
+      //margin-top:30px;
+      margin-bottom:100px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.container {
+	width:70%;
+	//background-image:url("http://zato.moo.jp/enactus/wp-content/themes/Original/images/body-bg.jpg");
+	//background-image:url("images/container-bg.jpg");
+	//margin-bottom:120px;
+	//position:absolute;
+	//top:200px;	
+	margin:0 auto;
+	//left:50%;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.posts{
+	width:74.4%;
+	float:left;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+	margin:0 auto;
+}
+.foot{
+	clear:both;
+	vertical-align:middle;
+	text-align:center;
+	height:100px;
+	box-shadow:0 0 7px #CFCFCF;
+	padding-bottom:5px;
+	background: -moz-linear-gradient(left 45deg, red, orange, yellow, green, blue, indigo, violet);
+	background: -webkit-gradient(linear, left top, right bottom, from(red), color-stop(0.2, orange), color-stop(0.3, yellow), color-stop(0.5, green), color-stop(0.7, blue), color-stop(0.8, indigo), to(violet));
+	/* IE */
+	//behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lightcoral', endColorstr='lightcoral',GradientType=1 );
+}
+.foot_grad{
+	background-color:white;
+	height:100%;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.foot p{
+	width:70%;
+	//margin:0 auto;
+	//display:inline-block;
+	text-align:left;
+	vertical-align:middle;
+	margin-top:40px;
+	margin-left:17%;
+	//color:#fff100;
+	color:black;	
+	text-shadow:0 1px 0 rgba(255,255,255,1),0 -1px 0 rgba(0,0,0,0.4);
+	position:absolute;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+/*.foot p:before {
+	color:#e4007f;
+	-webkit-mask-image:-webkit-linear-gradient(45deg,
+	rgba(0,0,0,0.5),
+	rgba(0,0,0,0.5) 15%,
+	rgba(0,0,0,0) 25%,
+	rgba(0,0,0,0) 35%,
+	rgba(0,0,0,0) 50%,
+	rgba(0,0,0,0.5) 60%,
+	rgba(0,0,0,1) 75%,
+	rgba(0,0,0,1) 85%,
+	rgba(0,0,0,1)
+	);
+	content:attr(title);
+	position:absolute;
+	//display:block;
+}
+.foot p:after {
+	color:#00a0e9;
+	-webkit-mask-image:-webkit-linear-gradient(45deg,
+	rgba(0,0,0,0),
+	rgba(0,0,0,0) 15%,
+	rgba(0,0,0,0) 25%,
+	rgba(0,0,0,0) 35%,
+	rgba(0,0,0,0.5) 50%,
+	rgba(0,0,0,0.8) 60%,
+	rgba(0,0,0,0.5) 75%,
+	rgba(0,0,0,0) 85%,
+	rgba(0,0,0,0)
+	);
+	content:attr(title);
+	position:absolute;
+	top:0;
+	display:block; 
+}*/
+h3    {font-size:20px;
+        border-left:solid 12px rgba(52, 152, 219,1.0);
+        padding-left:10px;
+	font:bold;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+p     {font-size:14px;
+        line-height:1.5;
+        margin:0 0 20px;}
+body.home.blog.logged-in.admin-bar.customize-support{
+	//background-image:url("images/home-bg.jpg");
+	background-image:url("images/body_gray.png");
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+body{
+	background-image:url(http://zato.moo.jp/enactus/wp-content/themes/Original/images/back_gray.png);
+	//background-color:rgb(255,240,80);
+	//background-color:#e90089;
+}
+
+/* se-container   */
+/*
+.se-container{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	//padding-top: 150px;
+}
+.se-slope{
+	margin: 0 -50px;
+	-webkit-transform-origin: left center;
+}
+.se-slope:nth-child(odd){
+	background: #ffe100;
+	-webkit-transform: rotate(5deg);
+	margin-top: -200px;
+	box-shadow: 0px -1px 3px rgba(0,0,0,0.4);
+	padding: 130px 100px 550px 100px;
+}
+.se-slope:nth-child(even){
+	background: #e90089;
+	-webkit-transform: rotate(-2.7deg);
+	box-shadow: 0px 2px 3px rgba(0,0,0,0.4) inset;
+	padding: 150px 100px 550px 100px;
+}
+.se-slope:nth-child(3n){
+	background: #45bdcf;
+	-webkit-transform: rotate(5deg);
+	margin-top: -200px;
+	box-shadow: 0px -1px 3px rgba(0,0,0,0.4);
+	padding: 130px 100px 550px 100px;
+}
+.se-slope:nth-child(3n+1){
+	background: #ffe100;
+	//-webkit-transform: rotate(-2.5deg);
+	-webkit-transform:none;	
+	box-shadow: 0px 2px 3px rgba(0,0,0,0.4) inset;
+	padding: 150px 100px 100px 100px;
+	margin-top:0px;
+}
+.se-slope:first-child{
+	background: #ffe100;
+	-webkit-transform:none;
+	margin-top: 0px;
+	box-shadow: 0px -1px 3px rgba(0,0,0,0.4);
+	padding: 130px 100px 250px 100px;
+}
+.se-content h3{
+	font-size: 60px;
+	position: relative;
+	display: inline-block;
+	padding: 10px 30px 8px 30px;
+	height: 80px;
+	line-height: 80px;
+	margin-bottom: 20px;
+	font-family: 'Bitter', 'Trebuchet MS', Arial;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+}
+.se-slope:nth-child(odd) .se-content h3{
+	background: #e90089;
+	color: #000;
+}
+.se-slope:nth-child(even) .se-content h3{
+   	 background: #000;
+	color: #e90089;
+}
+.se-slope:nth-child(3n) .se-content h3{
+   	 background: #45bdcf;
+	color: #45bdcf;
+}
+.se-content h3:before{
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: 38px solid transparent;
+	border-bottom: 60px solid transparent;
+	border-right: 60px solid black;
+	position: absolute;
+	left: -59px;
+	top: 0px;
+}
+.se-content h3:after{
+		content: '';
+		width: 0;
+		height: 0;
+		border-top: 38px solid transparent;
+		border-bottom: 60px solid transparent;
+		border-left: 60px solid black;
+		position: absolute;
+		right: -59px;
+		top: 0px;
+}
+.se-content{
+	text-align:center;
+	visibility:hidden;
+}
+*/
+
+/*ヘッダー*/
+img.act_logo {
+        height:50px;
+        float:left;
+	margin-left:17%;
+	//position:relative;
+	//top:-9px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.head{
+	padding-top:0.1px;
+	//padding-bottom:30px;
+	background-color: black;
+	//background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #ffffff), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #ffffff),color-stop(.75, #ffffff), color-stop(.75, transparent),to(transparent));
+	-webkit-background-size: 107px 107px;
+	/* IE */	
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lightcoral', endColorstr='lightcoral',GradientType=1 );
+}
+.header_top{
+	background-color:white;
+	padding-top:10px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.header_bar{
+	//background-color:white;
+	width:100%;
+	box-shadow:0 0 9px #CFCFCF;
+	padding-top:5px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+	text-align:left;
+	vertical-align:middle;
+	background-color:#fff100;
+	text-shadow:0 1px 0 rgba(255,255,255,1),0 -1px 0 rgba(0,0,0,0.4);
+	position:absolute;
+	background: -moz-linear-gradient(left 45deg, red, orange, yellow, green, blue, indigo, violet);
+	background: -webkit-gradient(linear, left top, right bottom, from(red), color-stop(0.2, orange), color-stop(0.3, yellow), color-stop(0.5, green), color-stop(0.7, blue), color-stop(0.8, indigo), to(violet));
+	/* IE */	
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lightcoral', endColorstr='lightcoral',GradientType=1 );
+}
+.h_border_1,.h_border_2,.h_border_3,.h_border_4,.h_border_5{
+	border-top:solid 3px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+img.header_side_2{
+	width:100%;
+	height:55px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#metaslider_4{
+     //  height:400px;
+	margin-bottom:0px;
+}
+img.header_image{
+       margin: 0 auto;
+       width:100%;
+}
+
+/* ナビゲーションバー*/
+.menu  {font-size:12px;
+	//height:40px;
+	margin:0;
+	padding:0;
+	margin-bottom:100px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.menu ul         {margin:0;
+                  padding:0;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.menu li         {list-style-type:none;
+                  float:left;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.menu li a{
+	display:block;
+	width:120px;
+	line-height:40px;
+	text-align: center;
+	text-decoration:none;
+	//background-image:url("http://zato.moo.jp/enactus/wp-content/themes/Original/images/body-bg.jpg");
+	padding-top:19px;	
+	padding-bottom:19px;
+	font-size:12px;
+	font-weight:bold;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.menu li:hover{
+	background-color:white;
+	color:black;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.menu li a:hover{
+	background-color:white;
+	color:black;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.menu a{
+	color:white;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#menu-item-74 a{
+	//background-color:lightcoral;
+	color:lightcoral;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}	
+#menu-item-73 a{
+	//background-color:lightseagreen;
+	color:lightseagreen;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}	
+#menu-item-72 a{
+	//background-color:lightskyblue;
+	color:lightskyblue;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}	
+#menu-item-71 a{
+	//background-color:lightsalmon;
+	color:lightsalmon;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}	
+#menu-item-74 a:hover{
+	background-color:lightcoral;
+	color:white;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}	
+#menu-item-73 a:hover{
+	background-color:lightseagreen;
+	color:white;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}	
+#menu-item-72 a:hover{
+	background-color:lightskyblue;
+	color:white;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}	
+#menu-item-71 a:hover{
+	background-color:lightsalmon;
+	color:white;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+
+/*タイル記事*/
+.most_contents{
+	
+}
+.post {
+        padding:10px;
+        margin:10px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.maincontent {
+	//margin: 10px 10px 10px 10px;
+	padding: 10px;
+	font-size: 17px;
+	font-family:verdana;
+	color:white;
+        clear: both;
+	line-height: 1.7em;
+	background-color:lightcoral;
+	text-align:center;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#maincontent h1 {
+	margin: 0px 0px 0px auto;
+	padding: 0;
+	font-family: Arial;
+	font-size: 17px;
+	font-weight: bold;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+	clear: both;
+	text-align: center;
+	color:#5B708E;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);	
+} 
+#maincontent h1 a {
+	text-decoration: none;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+} 
+#maincontent h1 a:hover {
+	text-decoration: none;
+	color:#333333;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+} 
+#maincontent h2 {
+	margin: 0px auto 5px auto;
+	padding: 0px;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	clear: both;
+	text-align: center;
+	color:#5B708E;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+} 
+#maincontent h3 {
+	margin: 0px auto 5px auto;
+	padding: 0px;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	clear: both;
+	text-align: center;
+	color:#5B708E;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+} 
+#maincontent h4 {
+	margin: 0px auto 5px auto;
+	padding: 0px;
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	clear: both;
+	text-align: center;
+	color:#5B708E;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#maincontent h5 {
+	margin: 0px auto 5px auto;
+	padding: 0px;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	clear: both;
+	text-align: center;
+	color:#5B708E;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+} 
+#maincontent h6 {
+	margin: 0px auto 5px auto;
+	padding: 0px;
+	font-family: Arial;
+	font-size: 11px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	clear: both;
+	text-align: center;
+	color:#5B708E;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+} 
+#maincontent p {
+	font-size: 12px;
+	font-family:verdana;
+	line-height: 1.7em;
+	margin: 0px 0px 15px 0px;
+	color:#5B708E;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#maincontent p a:hover {
+	text-decoration: none;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#maincontent a {
+	color: #5B708E;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#maincontent a:hover {
+	text-decoration: none;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#maincontent ul {
+	font-size: 12px;
+	line-height: 1.7em;
+	clear: left;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#maincontent ol {
+	font-size: 12px;
+	line-height: 1.7em;
+	clear: left;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#maincontent img{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+} 
+
+.postfooter {
+	clear: both;
+	font-size: 12px;
+	font-family:verdana;
+	line-height: 1.7em;
+	clear: left;
+	margin: 10px 0px 10px 0px;
+	color:#5B708E;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#maincontent .postfooter a{
+	color:#5B708E;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#maincontent .postfooter a:hover{
+	color:#333333;
+	text-decoration:none;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+
+/* 記事タイトル  */
+.postbg{
+	//background:url(img/post.jpg) top left no-repeat;
+        background-color:white;	
+	//height:304px;
+	//width:31.7%;
+	width:31.6%;	
+	//width:237px;	
+	padding: 5px;
+	float:left;
+	overflow:hidden;
+	border:1px #DCDCDC solid ;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postbg:hover{
+	//top: -75px;
+	//left:-75px;
+	//width: 250px;
+	//height: 290px;
+	//font-size: 48px;
+	//line-height: 300px;
+	//z-index: 100;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.4); 
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postimage {
+	//height:120px;
+	//width:214px;
+	//margin:0px 0px 10px 0px;
+	display:block;
+	overflow:hidden;
+	width:100%;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+
+}
+.postimage img  {
+	height:100%;
+	width:100%;
+	padding: 0px;
+	float:left;
+	overflow:hidden;
+	 margin:0px 0px 0px 0px;
+	border:0px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postimage img:hover {
+	 border:0px;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postcontent  {
+	padding:0px 5px 0px 5px;
+	display:block;
+	overflow:hidden;
+	word-wrap: break-word;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postcontent h3 {
+	font-family:arial;
+	font-size:14px;
+	color:#5B708E;
+	text-decoration:none;
+	text-transform:uppercase;
+	margin:10px 0px 0px 0px;
+	padding:0px 0px 0px 3px;
+	line-height:1em;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postcontent h3 a {
+	color:rgba(52, 152, 219,1.0);
+	text-decoration:none;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postcontent h3 a:hover {
+	//color:#333333;
+	text-decoration:none;
+	opacity:0.6;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.posttext {
+	font-family:verdana;
+	font-size:11px;
+	color:#9CABC0;
+	margin:10px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	line-height:1.3em;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.posttext p {
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.posttext a {
+	color:#5B708E;
+	text-decoration:none;
+	font-weight:bold;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.posttext a:hover {
+	color:#333333;
+	text-decoration:none;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postreadmore {
+	font-family:verdana;
+	font-size:11px;
+	color:#5B708E;
+	margin:0px 5px 0px 5px;
+	padding:0px 0px 0px 0px;
+	font-weight:bold;
+	height:24px;
+	overflow:hidden;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postreadmore h5 {
+	height:24px;
+	width: 204px;
+	display:block;
+	margin:0px;
+	padding:0px 0px 0px 0px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postreadmore h5 a {
+	text-decoration:none;
+	font-weight:bold;
+	font-family:verdana;
+	font-size:11px;
+	color:#5B708E;
+	padding:5px 0px 0px 10px;
+	height:19px;
+	width: 194px;
+	display:block;
+	background:url(img/more.jpg) top left no-repeat;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postreadmore h5 a:hover {
+	color:#333333;
+	text-decoration:none;
+	background-position:-204px 0px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+
+.smldivider {
+	width:204px;
+	margin:0px auto 7px auto;
+	height:1px;
+	display:block;
+	background:url(img/sml_divider.gif) top center;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+
+/*TOPの記事CSS  */
+
+.postcats {
+	font-family:verdana;
+	font-size:11px;
+	color:#9CABC0;
+	margin:10px 5px 10px 5px;
+	padding:0px 0px 0px 0px;
+	font-weight:bold;
+	//height:24px;
+	//overflow:hidden;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postcats a {
+	color:white;
+	text-decoration:none;
+	font-weight:bold;
+	padding:5px;
+	font-size:15px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postcats a:hover {
+	color:#5B708E;
+	text-decoration:none;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postcomments {
+	font-family:verdana;
+	font-size:11px;
+	color:#9CABC0;
+	margin:0px 0px 0px 5px;
+	padding:0px 0px 0px 0px;
+	font-weight:bold;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postcomments a {
+	color:#9CABC0;
+	text-decoration:none;
+	font-weight:bold;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postcomments a:hover {
+	color:#5B708E;
+	text-decoration:none;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postdate{
+	font-size:11px;
+	display:table;
+	float:right;
+	margin-top:5px;
+	margin-bottom:5px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+
+#postnavigation {
+	width:980px;
+	margin:0px auto 0px auto;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#previousposts {
+	width:400px;
+	font-family:verdana;
+	font-size:12px;
+	color:#9CABC0;
+	font-weight:bold;
+	text-decoration:none;
+	padding: 0px;
+	display:block;
+	float:right;
+	clear:right;
+	text-align:right;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#previousposts a {
+	color:#9CABC0;
+	text-decoration:none;
+	background:url(img/previous.gif) top right no-repeat;
+	padding: 10px 15px 10px 0px;
+	width:385px;
+	display:block;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#previousposts a:hover {
+	color:#5B708E;
+	text-decoration:none;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#nextposts {
+	width:400px;
+	font-family:verdana;
+	font-size:12px;
+	color:#9CABC0;
+	font-weight:bold;
+	text-decoration:none;
+	display:block;
+	float:left;
+	clear:left;
+	text-align:left;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#nextposts a {
+	color:#9CABC0;
+	text-decoration:none;
+	background:url(img/next.gif) top left no-repeat;
+	padding: 10px 0px 10px 15px;
+	display:block;
+	width:385px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#nextposts a:hover {
+	color:#5B708E;
+	text-decoration:none;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.post_title{
+       margin-top:30px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postcats a.career{
+	background-color:lightseagreen;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postcats a.love{
+	background-color:#FF7790;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.postcats a.life{
+	background-color:#3279BB;
+}
+.postcats a.gourmet{
+	background-color:lightsalmon;
+}
+.postcats a.world{
+	background-color:#A78358;
+}
+
+/*メニューバー*/
+#navbar{
+        margin-bottom:40px;
+        height:40px;
+}
+div.menu-mainmenu-container{
+           height:60px;
+	   width:70%;
+	   margin:0 auto;
+}
+ul#menu-mainmenu.menu{
+	float:right;
+	position:absolute;
+	top:0%;
+	right:15%;
+}
+
+/*ウィジェット（人気記事ランキング）*/
+/*#sidebar{
+      border:2px #DCDCDC solid;
+      width:200px;
+      background-color:#99cc00;
+}*/
+
+/*メインメニュー（サイトマップ）*/
+li.menu-item menu-item-type-post_type menu-item-object-page menu-item-13{
+	border-top-color:#00A5DE;
+	background-image:url("http://zato.moo.jp/enactus/wp-content/themes/Original/images/body-bg.jpg");
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#navbar ul{
+	        margin-bottom:40px;
+	}
+.current-menu-item{
+	background-color:white;
+}
+.current-menu-item a{
+	color:black;
+}
+.widgettitle{
+	font-size:25px;
+	//margin:5px;
+	padding:10px;
+	color:white;
+	background-color:lightcoral;
+	margin:5px;
+	text-align:center;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#recent-posts-2  li{
+	margin:10px;
+	border-bottom:1px #F5AC0F dashed;
+	padding:5px;
+	text-align:center;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#recent-posts-2{
+border:1px #DCDCDC solid;
+//margin:10px;
+}
+#recentcomments  li{
+//	margin:10px;
+}
+#recent-comments-2{
+border:1px #F5AC0F solid;
+//margin:10px;
+}
+#views-2  li{
+	//margin:10px;
+}
+#views-2{
+border:1px #DCDCDC solid;
+//margin:10px;
+}
+#searchform  div{
+//	margin:10px;
+}
+#search-2{
+border:1px #DCDCDC solid;
+//margin:10px;
+}
+
+/*前後ページへのリンク*/
+.prevnext{
+	font-size:14px;
+	color:#8bc124;
+	margin-top:30px;
+	overflow:hidden;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.prevnext a {color:#8bc124;}
+.prevnext a:hover{color:#ff8800;}
+.prev {
+	margin:0;
+	float:left;
+        margin:15px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.next{
+	margin:0;
+	float:right;
+	margin:15px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+
+/* ウィジェットのサムネイル  */
+.attachment-thumbnail{
+         margin:0 auto;
+}
+.cat_web{
+	background: #f13d63;
+	color: #fff;
+	font-weight: bold;
+	position: relative;
+	top: -200px;
+	left: 4px;
+	font-size: 24px;
+	text-align: center;
+	display: block;
+	width: 100px;
+	padding: 4px 0 2px 0;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.cat_arrow{
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 5px 0px 0 0;
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	border-color: #a10022 transparent transparent transparent;
+	color: #fff;
+	font-weight: bold;
+	font-size: 79%;
+	text-align: center;
+	border-left:0.6em solid transparent;	
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#categories-2 li{
+	//display: table-cell;
+	//vertical-align: middle;
+	text-align: center;
+	background:rgba(249, 252, 247, 0.54902);
+	border-radius:2px;
+	display:block;
+	transition:all 0.24s ease;
+	-webkit-box-shadow:rgba(229, 234, 237, 0.901961) 0px 0px 0px 1px;
+	box-shadow:rgba(229, 234, 237, 0.901961) 0px 0px 0px 1px;
+	padding:10px;
+	margin:5px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#categories-2 li:hover,#categories-2 a:hover {
+	//color:#39f;
+	opacity:0.6;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#categories-2{
+	border:1px #DCDCDC solid;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#categories-2 a{
+	display:block;
+	vertical-align:middle;
+	text-align:center;
+	text-decoration:none;
+	color:white;
+}
+#categories-2 .cat-item-5{
+	background-color:lightseagreen;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#categories-2 .cat-item-9{
+	background-color:lightsalmon;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#categories-2 .cat-item-10{
+	background-color:#3279BB;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#categories-2 .cat-item-8{
+	background-color:#FF7790;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#categories-2 .cat-item-7{
+	background-color:#A78358;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#categories-2 .cat-item-1{
+	background-color:gray;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+li.cat-item{
+	color:white;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+
+/*サイドバーのサムネイル*/
+.thumb_img{
+	width:100px;
+	height:100px;
+}
+.thumb_img img{
+		    width:100px;
+		    height:100px;
+}
+.attachment-thumbnail.wp-post-image{
+	width:80px;
+	height:80px;
+	float:left;
+}
+#postviews_posts_title{
+	float:right;
+	width:40%;
+	margin:10px;
+	vertical-align:middle;
+	display:table-cell;
+	text-align:center;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#npcatch span.title{
+	float:right;
+	display:inline-block;
+	margin:20px 10px;
+	vertical-align:middle;
+	text-align:center;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#npcatch span.title a{
+	display:inline-block;
+	float:right;
+	vertical-align:middle;
+	text-align:center;
+	text-decoration:none;
+	color:rgba(52, 152, 219,1.0);
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#npcatch span.date{
+	display:block;
+}
+#npcatch li{
+	background:rgba(249, 252, 247, 0.54902);
+	border-radius:2px;
+	display:block;
+	transition:all 0.24s ease;
+	-webkit-box-shadow:rgba(229, 234, 237, 0.901961) 0px 0px 0px 1px;
+	box-shadow:rgba(229, 234, 237, 0.901961) 0px 0px 0px 1px;
+	margin:7px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+ul#npcatch{
+	padding-bottom:5px;
+}
+.home_conents{
+	float:left;
+	//width:70%;
+	margin-bottom:120px;
+	background-color:white;
+	//padding:5px;
+	//position:absolute;
+	//left:-52%;
+	border:solid 1px #DCDCDC;
+	top:200px;
+	//font-weight:bold;
+	margin-top:200px;
+	box-shadow:0 0 5px #CFCFCF;
+	min-width:100%;	
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+/*.middle_contents{
+	width:100%;
+	float:left;
+}*/
+.post_li{
+	border-radius:2px;
+	display:block;
+	transition:all 0.24s ease;
+	-webkit-box-shadow:rgba(229, 234, 237, 0.901961) 0px 0px 0px 1px;
+	box-shadow:rgba(229, 234, 237, 0.901961) 0px 0px 0px 1px;
+	margin:7px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#postviews_posts_title a{
+	display: inline-block;
+    	text-align: left;
+	color:rgba(52, 152, 219,1.0);
+	text-decoration:none;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+p.postviews_posts_count{
+	float:right;
+}
+
+
+.widget_sp_image img{
+	width:85%;
+	margin:15px;
+	margin-bottom:0px;
+	box-shadow:4px 4px 4px gray;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+#widget_sp_image-5 img{
+	width:85%;
+	margin:0 auto;
+	margin-bottom:20px;
+	margin-left:15px;	
+	box-shadow:4px 4px 4px gray;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+	height:75px;
+}
+.cat_body{
+	height:20px;
+}
+#menu li{
+//	background-color:white;
+}
+#npcatch li:hover, li.post_li:hover{
+	opacity:0.6;
+}
+.post_stats{
+	border:solid;
+}
+
+/* サイドバー in メルマガ */
+ul#menu>div{
+	padding:10px;
+	background-color:lightcoral;
+	margin:15px;
+	margin-top:0px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+ul#menu>div label{
+	visibility:hidden;
+}
+ul#menu>div h4{
+	color:white;
+}
+ul#menu input{
+	width:70%;
+	display:block;
+	background:white;
+	color:gray;
+}
+
+
+/*likebox*/
+
+iframe.likebox{
+	//margin:10px;
+	width:25.4%;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.likebox{
+	margin:0 auto;
+	background:white;
+	//position:absolute;
+	top:0;
+	right:0;	
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+
+}
+div._4s7c{
+	height:340px;
+}
+
+
+.widget.widget_sp_image{
+	background none;
+}
+
+/* pagenation  */
+
+.pagination {
+	clear:both;
+	padding-top:100px;
+	padding-bottom:40px;
+	position:relative;
+	font-size:31px;
+	//line-height:13px;
+	display:inline-block;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.pagination span, .pagination a {
+	display:block;
+	float:left;
+	margin: 2px 2px 2px 0;
+	//padding:6px 9px 5px 9px;
+	padding 15px;	
+	text-decoration:none;
+	width:auto;
+	color:#fff;
+	background: lightcoral;
+	padding:15px;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.pagination a:hover{
+	color:#fff;
+	background: #3279BB;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.pagination .current{
+	//padding:6px 9px 5px 9px;
+	padding:15px;	
+	background: #3279BB;
+	color:#fff;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+.page_nation{
+	text-align:center;
+	width:100%;
+	float:right;
+	behavior: url(http://zato.moo.jp/enactus/wp-content/themes/Original/js/PIE.htc);
+}
+
+
+/* IE用  */
+.ie .home_conents{
+	width:100%;
+	top:0;
+	//margin-top:50px;
+}
+.ie iframe.likebox{
+	float:right;
+}
+.ie body{
+	font:inherit;
+}
+.ie #metaslider_4{
+	height:100%;
+}
+/*.ie div.foot{
+	bottom:0px;
+	position:absolute;
+	margin-top:50px;
+	display:block;
+	margin-bottom:0px;
+}*/
+.ie .metaslider .flexslider .flex-direction-nav LI{
+	visibilty:hidden;
+}
+.ie ul#menu{
+	width:25.2%;
+}
+.ie .post_li{
+	background-color:white;
+}
+.ie #postviews_posts_title{
+	width:37%;
+}
+.ie .postbg{
+	width:31.6%;
+}
+.ie8 .postbg{
+       width:31%;
+}       
+
+/* windows structure */
+.win.safari .postbg{
+	width:31%;
+}
+.win.safari .postimage img{
+	height:200px;
+}
+.win.safari .postbg a{
+	font-size:12px;
+}
+.win.chrome .postbg{
+	width:31%;
+}
+.win.gecko .postbg{
+	width:31%;
+}
+.win.ie .postcats a{
+	font-size:7px;
+}
+.win.ie8 .postbg{
+	width:31%;
+}
+
+
+/* Mac Structure */
+.mac.gecko .postbg{
+	//width:31%;
+}
+
+/* Safari Structure */
+.safari .postimage img{
+	height:170px;
+} 
+
+
+/* Resposive Structure */
+
+/* iMac 27inch */
+@media(max-width:2561px){
+
+	.postbg{width:32.4%;}
+	ul#menu{width:25.4%;}
+	.maincontent{font-size:30px;}	
+	.postbg a{font-size:30px;}
+	.postreadmore{
+		margin-bottom:15px;
+		height:auto;
+	}	
+	.postreadmore h5 a{
+		font-size:30px;
+		height:auto;
+		//width:auto;	
+	}
+	.postreadmore h5{
+		height:auto;
+		width:auto;
+	}	
+	#metaslider_container_4{max-width:none !important;}
+	.postdate{
+		font-size:20px;
+		height:auto;	
+	}
+	.postcats{
+		margin:30px 10px 30px 10px;
+	}
+	.expect_image{margin-top:15px;}	
+	ul#menu div h4{font-size:30px;}	
+	#categories-2 ul{
+		font-size:30px;
+	}
+	.widgettitle{
+		font-size:45px;
+	}	
+	.postviews_posts_count{
+		font-size:20px;
+	}
+	#views-2 ul{
+		font-size:30px;
+	}
+	.attachment-thumbnail.wp-post-image {
+		width: 150px;
+		height: 150px;
+	}
+	.widget_sp_image img{
+		width:92%;
+		height:380px;
+	}
+	.cat_web{
+		top:-350px;
+		font-size:35px;
+		padding:10px 0px 10px 0px;	
+		left:1px;	
+	}
+	ul#menu input{font-size:30px;}
+	.pagination{font-size:51px;}
+
+}
+
+
+/* iMac 21.5inch */
+@media(max-width:1921px){
+
+	.postbg{width:32.1%;}
+	ul#menu{width:25.4%;}
+	.maincontent{font-size:22px;}	
+	.postbg a{font-size:22px;}
+	.postreadmore{
+		margin-bottom:15px;
+		height:auto;
+	}	
+	.postreadmore h5 a{
+		font-size:22px;
+		height:auto;
+		//width:auto;	
+	}
+	.postreadmore h5{
+		height:auto;
+		width:auto;
+	}	
+	#metaslider_container_4{max-width:none !important;}
+	.postdate{
+		font-size:12px;
+		height:auto;	
+	}
+	.postcats{
+		margin:30px 10px 30px 10px;
+	}
+	.expect_image{margin-top:15px;}	
+	ul#menu div h4{font-size:22px;}	
+	#categories-2 ul{
+		font-size:22px;
+	}
+	.widgettitle{
+		font-size:37px;
+	}	
+	.postviews_posts_count{
+		font-size:12px;
+	}
+	#views-2 ul{
+		font-size:22px;
+	}
+	.attachment-thumbnail.wp-post-image {
+		width: 120px;
+		height: 120px;
+	}
+	.widget_sp_image img{
+		width:89%;
+		height:280px;
+	}
+	.cat_web{
+		top:-260px;
+		font-size:35px;
+		padding:10px 0px 10px 0px;	
+		left:0px;	
+	}
+	ul#menu input{font-size:22px;}
+	.pagination{font-size:40px;}
+
+}
+
+/* LargeDesktop */
+@media(max-width:1681px){
+
+	.postbg{width:31.9%;}
+	ul#menu{width:25.4%;}
+	.maincontent{font-size:18px;}	
+	.postbg a{font-size:18px;}
+	.postreadmore{
+		margin-bottom:15px;
+		height:auto;
+	}	
+	.postreadmore h5 a{
+		font-size:18px;
+		height:auto;
+		//width:auto;	
+	}
+	.postreadmore h5{
+		height:auto;
+		width:auto;
+	}	
+	#metaslider_container_4{max-width:none !important;}
+	.postdate{
+		font-size:10px;
+		height:auto;	
+	}
+	.postcats{
+		margin:20px 10px 15px 10px;
+	}
+	.expect_image{margin-top:0px;}	
+	ul#menu div h4{font-size:18px;}	
+	#categories-2 ul{
+		font-size:18px;
+	}
+	.widgettitle{
+		font-size:30px;
+	}	
+	.postviews_posts_count{
+		font-size:10px;
+	}
+	#views-2 ul{
+		font-size:18px;
+	}
+	.attachment-thumbnail.wp-post-image {
+		width: 100px;
+		height: 100px;
+	}
+	.widget_sp_image img{
+		width:89%;
+		height:280px;
+	}
+	ul#menu input{font-size:18px;}
+	.pagination{font-size:35px;}
+
+}
+
+/* Lenovo idea Pad */
+@media(max-width:1601px){
+
+	.postbg{
+		width:265px;
+		//width:31.8%;	
+	}
+	ul#menu{width:25.4%;}
+	.maincontent{font-size:18px;}	
+	.postbg a{font-size:18px;}
+	.postreadmore{
+		margin-bottom:15px;
+		height:auto;
+	}	
+	.postreadmore h5 a{
+		font-size:18px;
+		height:auto;
+		//width:auto;	
+	}
+	.postreadmore h5{
+		height:auto;
+		width:auto;
+	}	
+	#metaslider_container_4{max-width:none !important;}
+	.postdate{
+		font-size:10px;
+		height:auto;	
+	}
+	.postcats{
+		margin:20px 10px 15px 10px;
+	}
+	.expect_image{margin-top:0px;}	
+	ul#menu div h4{font-size:18px;}	
+	#categories-2 ul{
+		font-size:18px;
+	}
+	.widgettitle{
+		font-size:30px;
+	}	
+	.postviews_posts_count{
+		font-size:10px;
+	}
+	#views-2 ul{
+		font-size:18px;
+	}
+	.attachment-thumbnail.wp-post-image {
+		width: 100px;
+		height: 100px;
+	}
+	.widget_sp_image img{
+		width:89%;
+		height:280px;
+	}
+	ul#menu input{font-size:18px;}
+	.pagination{font-size:35px;}
+
+}
+
+
+/* Mac book 15inch */
+@media(max-width:1441px){
+
+	.postbg{width:31.7%;}
+	ul#menu{width:25.3%;}
+	.maincontent{font-size:15px;}	
+	.postbg a{
+		font-size:15px;
+	}
+	.postcats a{
+		//display:inline-block;
+	}	
+	.postreadmore{
+		margin-bottom:15px;
+		height:auto;
+	}	
+	.postreadmore h5 a{
+		font-size:15px;
+		height:auto;
+		//width:auto;	
+	}
+	.postreadmore h5{
+		height:auto;
+		width:auto;
+	}	
+	#metaslider_container_4{max-width:none !important;}
+	.postdate{
+		font-size:10px;
+		height:auto;	
+	}
+	.postcats{
+		margin:20px 10px 15px 10px;
+	}
+	.expect_image{
+		margin-top:0px;
+		height:100%;
+	}	
+	ul#menu div h4{font-size:15px;}	
+	#categories-2 ul{
+		font-size:15px;
+	}
+	.widgettitle{
+		font-size:30px;
+	}	
+	.postviews_posts_count{
+		font-size:10px;
+	}
+	#views-2 ul{
+		font-size:15px;
+	}
+	.attachment-thumbnail.wp-post-image {
+		width: 90px;
+		height: 90px;
+	}
+	.widget_sp_image img{
+		width:85%;
+		height:230px;
+	}
+	.cat_web{
+		top:-210px;
+		font-size:22px;
+		padding:8px 0px 8px 0px;	
+		left:5px;	
+	}
+	ul#menu input{font-size:15px;}
+	.pagination{font-size:35px;}
+
+
+}
+
+/* Ultra book */
+@media(max-width:1367px){
+	.widgettitle{font-size:28px;}	
+	.postbg{width:31.6%;}
+}
+
+/* Lenovo idea Pad */
+@media(max-width:1281px){
+
+	.postbg{
+		//width:265px;
+		width:31.4%;	
+		width:31.4% \0/ !important; /* IE9 */	
+	}
+	ul#menu{width:25.3%;}
+	.maincontent{font-size:18px;}	
+	.postbg a{font-size:13px;}
+	.postreadmore h5 a{
+		font-size:13px;
+	}
+	.attachment-thumbnail.wp-post-image {
+		width: 80px;
+		height: 80px;
+	}
+	.widget_sp_image img{
+		width:84%;
+		height:200px;
+	}
+	.cat_web{
+		top:-180px;
+		font-size:22px;
+		padding:8px 0px 8px 0px;	
+		left:5px;	
+	}
+	.widgettitle{font-size:25px;}
+	 .postimage img{height:200px;}
+
+}
+
+/* iPad */
+@media(max-width:1025px){
+
+	.slides img{
+		height:300px !important;
+	}
+	.postbg{
+		width:47.7%;
+		width:162.6px \0/ !important; /* IE9 */	
+	}
+	.widgettitle{
+		font-size:21px;
+	}	
+	.attachment-thumbnail.wp-post-image {
+		width: 80px;
+		height: 80px;
+	}	
+	.widget_sp_image img{
+		width:85%;
+		height:180px;
+	}
+	.cat_web{
+		top:-165px;
+		font-size:18px;
+		padding:8px 0px 8px 0px;	
+		left:7px;	
+	}
+	ul#menu input{
+		font-size:15px;
+		width:95%;
+	}
+	#postviews_posts_title{
+		width:31%;
+		overflow:hidden;
+	}
+	.postimage img{
+		height:300px;
+		height:180px \0/; /* IE9 */	
+	}
+	.postbg a{
+		font-size:9px \0/; /* IE9 */
+	}
+
+	.mac.gecko .postbg{
+		//width:31%;
+	}
+
+}
+
+/* iPad 1&2 */
+@media(max-width:769px){
+	.menu li a{
+	}
+	.home_conents{margin-top:120px;}
+	.container{width:85%;}	
+	.posts{width:98%;}
+	.postbg{width:100%;}
+	ul#menu{width:100%;}
+	.maincontent{font-size:25px;}
+	.postbg a{font-size:30px;}
+	.postreadmore{
+		margin-bottom:25px;
+	}
+	.postreadmore h5 a{
+		font-size:30px;
+	}
+	#metaslider_container_4{max-width:none !important;}
+	.postdate{
+		font-size:20px;
+	}
+	.postcats{
+		margin:20px 10px 35px 10px;
+	}
+	.expect_image{margin-top:10px;}
+	.postimage img{
+		height:300px;
+	}	
+	
+	ul#menu div h4{font-size:25px;}
+	#categories-2 ul{
+		font-size:35px;
+	}
+	.widgettitle{
+		font-size:50px;
+	}
+	#postviews_posts_title{width:70%;}	
+	.postviews_posts_count{
+		font-size:22px;
+			
+	}
+	#views-2 ul{
+		font-size:30px;
+	}
+	.attachment-thumbnail.wp-post-image {
+		width: 90px;
+		height: 90px;
+	}
+	.widget_sp_image img{
+		width:94%;
+		height:230px;
+	}
+	.cat_web{
+		top:-210px;
+		font-size:22px;
+		padding:8px 0px 8px 0px;
+		left:5px;
+	}
+	ul#menu input{font-size:25px;}
+	.pagination{font-size:35px;}
+	iframe.likebox{
+		width:100%;
+		height:210px !important;	
+	}
+}
+
+/* iPhone */
+@media(max-width:641px){
+	
+	img{width:100%;}
+
+	.menu li a{
+		height:35px;
+		width:40px;
+		line-height:18px;
+		padding-top:17px;
+	}
+	img.act_logo{
+		margin-left:9%;
+		width:25%;
+	}
+	ul#menu-mainmenu.menu{
+		right:7%;	
+	}
+
+	.slides img{
+		//height:210px !important;
+	}
+
+	.home_conents{margin-top:120px;}
+	.container{width:83%;}	
+	.posts{width:96%;}
+	.postbg{width:100%;}
+	ul#menu{width:100%;}
+	.maincontent{font-size:25px;}
+	.postbg a{font-size:10px;}
+	.postreadmore{
+		margin-bottom:15px;
+	}
+	.postreadmore h5 a{
+		font-size:15px;
+	}
+	#metaslider_container_4{max-width:none !important;}
+	.postdate{
+		font-size:15px;
+	}
+	.postcats{
+		margin:20px 10px 35px 10px;
+	}
+	.expect_image{margin-top:10px;}
+	ul#menu div h4{font-size:25px;}
+	#categories-2 ul{
+		font-size:35px;
+	}
+	.widgettitle{
+		font-size:50px;
+	}
+	#postviews_posts_title{width:50%;}	
+	.postviews_posts_count{
+		font-size:22px;
+			
+	}
+	.postimage img{
+		height:250px;
+	}	
+	#views-2 ul{
+		font-size:30px;
+	}
+	.attachment-thumbnail.wp-post-image {
+		width: 90px;
+		height: 90px;
+	}
+	.widget_sp_image img{
+		width:86%;
+		height:230px;
+	}
+	.widget_sp_image img:nth-of-type(2) {
+		width:86%;
+		height:80px;
+	}
+	.cat_web{
+		top:-210px;
+		font-size:22px;
+		padding:8px 0px 8px 0px;
+		left:5px;
+	}
+	ul#menu input{font-size:15px;}
+	.pagination{
+		font-size:25px;
+		margin-left:15px;
+	}
+	iframe.likebox{
+		width:100%;
+		height:240px !important;	
+	}
+	
+}
+
+/* Mac book 15inch */
+/*@media(max-width:1441px){
+
+	.postbg{width:31.7%;}
+	ul#menu{width:25.3%;}
+}*/
+
+/* Mac book 15inch */
+/*@media(max-width:1441px){
+
+	.postbg{width:31.7%;}
+	ul#menu{width:25.3%;}
+}*/
+
+/* Mac book 11inch */
+/*@media(max-width:1367px){
+
+	.postbg{width:31.6%;}
+	ul#menu{width:25.3%;}
+}*/
+
+
+@media(max-width:480px){
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+
+a.home-link{
+	min-height:0px !important;
+	height:0px;
+}
+
+.site-content{
+	background-color:white;
+	width:80%;
+	margin:0 auto;
+}
+.hentry{
+	width:90%;
+	margin:0 auto;
+}
+
+
+/* Responsive Structure */
+
+/* iPhone */
+
+@media(max-width:641px) {
+	
+	.site-content{
+		width:95%;
+	}
+
+
+}
